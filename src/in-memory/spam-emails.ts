@@ -5,7 +5,7 @@ import spam from './spam';
 /**
  * Provides hardcoded spam emails from the local file.
  */
-export default class HamEmails extends InMemoryEmailsProvider {
+export default class SpamEmails extends InMemoryEmailsProvider {
   protected source(): Array<EmailHeaders> {
     return spam;
   }
