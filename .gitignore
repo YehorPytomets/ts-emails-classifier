@@ -1,3 +1,34 @@
+### IntelliJ IDEA:
+
+# User-specific stuff
+.idea/**/workspace.xml
+.idea/**/dictionaries
+
+# Sensitive or high-churn files
+.idea/**/uiDesigner.xml
+
+# Gradle
+.idea/**/gradle.xml
+
+# Do not ignore code style settings.
+!/.idea/codeStyles/codeStyleConfig.xml
+
+# IntelliJ IDEA modules and interim config files.
+*.iml
+.idea/*.xml
+.idea/.name
+.idea/artifacts
+.idea/libraries
+.idea/modules
+.idea/shelf
+
+# Do not ignore the following IDEA settings
+!.idea/misc.xml
+!.idea/vcs.xml
+!.idea/codeStyleSettings.xml
+!.idea/codeStyles/
+!.idea/copyright/
+
 # Compiled class file
 *.class
 
