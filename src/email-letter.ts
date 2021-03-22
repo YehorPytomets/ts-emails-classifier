@@ -36,10 +36,7 @@ export default class EmailLetter {
    * Extracts words from the `body`.
    */
   public words(): Array<Word> {
-    return this.extractWordsFromBody()
-      .map((word) => ({
-        value: word,
-      }));
+    return this.extractWordsFromBody();
   }
 
   /**

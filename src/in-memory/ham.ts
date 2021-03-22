@@ -432,6 +432,24 @@ const ham: Array<EmailHeaders> = [
       'rgrds,\n' +
       'Bernard',
   },
+  {
+    subject: '[zzzzteana] Re: Australian Catholic Kiddie Perv Steps Aside',
+    body: '--- In forteana@y..., "D.McMann" wrote:\n' +
+      '> Robert Moaby, 33, who sent death threats to staff, was also jailed\n' +
+      '> for hoarding indecent pictures of children on his home computer.\n' +
+      '> Hmm, if I didn\'t trust our government and secret police, I could \n' +
+      'look at\n' +
+      '> this another way....\n' +
+      'There is a bit of circumstantial evidence - apparently some MT \n' +
+      'listers were approached by him (via email) - a little research in \n' +
+      'dejanews/google groups showed a number of messages from him, clearly \n' +
+      'hoping to contact girls, appearing in "alt.teens" and similar groups -\n' +
+      ' I just tried a Google Groups search on "Robert Moaby" and some of \n' +
+      'them came top of the list.\n' +
+      'Note for Marie - "MT" stands for Mark Thomas, a slightly slimmer, UK \n' +
+      'version of your Michael Moore - the mailing list is named after him. \n' +
+      'Rob',
+  },
 ];
 
 export default ham;
