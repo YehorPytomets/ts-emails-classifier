@@ -95,9 +95,6 @@ const newEmailIsSpamGuess = Object.entries(emailWords).reduce((probability: numb
   }
   return probability * spamProbability;
 }, emailIsSpamGuess);
-console.log('newEmailIsHamGuess', newEmailIsHamGuess);
-console.log('newEmailIsSpamGuess', newEmailIsSpamGuess);
 
-const result = new EmailClassifier(new HamEmails(), new SpamEmails(), alpha)
+new EmailClassifier(new HamEmails(), new SpamEmails(), alpha)
   .test(email);
-console.log(result);

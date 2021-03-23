@@ -28,12 +28,12 @@ export default class EmailClassifier implements Classifier<EmailLetter, EmailCla
     this.computeEmailIsSpamGuess(spam.getEmails(), ham.getEmails());
   }
 
-  public test(data: EmailLetter): ClassifiedEmail {
-    const wordCounts = computeWordCounts(data.words(), this.alpha);
+  public test(email: EmailLetter): ClassifiedEmail {
+    const wordCounts = computeWordCounts(email.words());
     const emailIsHamGuess = this.computeGuess(wordCounts, this.ham, this.emailIsHamGuess);
     const emailIsSpamGuess = this.computeGuess(wordCounts, this.spam, this.emailIsSpamGuess);
     return {
-      data,
+      data: email,
       classes: {
         'ham': emailIsHamGuess,
         'spam': emailIsSpamGuess,
@@ -56,7 +56,7 @@ export default class EmailClassifier implements Classifier<EmailLetter, EmailCla
     this.emailIsHamGuess = computePriorProbability(ham.length, spam.length);
   }
 
-  private computeEmailIsSpamGuess(ham: Array<EmailLetter>, spam: Array<EmailLetter>): void {
+  private computeEmailIsSpamGuess(spam: Array<EmailLetter>, ham: Array<EmailLetter>): void {
     this.emailIsSpamGuess = computePriorProbability(spam.length, ham.length);
   }
 }

@@ -1,7 +1,8 @@
 import { Word } from '../word';
 import { Alpha, Count } from './types';
 
-export default function computeWordCounts(words: Array<Word>, alpha: Alpha): Record<Word, Count> {
+export default function computeWordCounts(words: Array<Word>,
+                                          alpha: Alpha = 0): Record<Word, Count> {
   const wordCounts: Record<Word, Count> = {};
   return words.reduce((counts: Record<string, number>, word: Word) => {
     if (!counts[word]) {
